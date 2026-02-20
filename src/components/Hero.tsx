@@ -26,3 +26,22 @@ export default function Hero() {
     </section>
   );
 }
+import Image from "next/image";
+
+export default function Hero() {
+  return (
+    <div className="text-center py-20">
+      <Image
+        src="/1771402479153.jpeg"
+        alt="Santanu Konwar"
+        width={180}
+        height={180}
+        className="rounded-full border border-white/20 mx-auto"
+        priority
+      />
+
+      <h1 className="text-5xl font-bold mt-6">Santanu Konwar</h1>
+      <p className="text-gray-400 mt-2">Creative Developer</p>
+    </div>
+  );
+}
